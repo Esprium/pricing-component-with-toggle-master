@@ -18,7 +18,7 @@
     <style>
       @font-face {
         font-family: mont;
-        src: url(./Montserrat-SemiBold.ttf);
+        src: url(./Montserrat-Bold.ttf);
       }
       .attribution {
         font-size: 11px;
@@ -94,11 +94,12 @@
         background-color: white;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
-        padding: 10px;
+        padding: 18px;
+        color: hsl(232, 13%, 33%);
       }
       .box2 {
-        padding: 10px;
-        padding-top: 30px;
+        padding: 18px;
+        padding-top: 35px;
         width: 33.33%;
         height: 110%;
         margin-top: -20px;
@@ -116,9 +117,11 @@
         background-color: white;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
-        padding: 10px;
+        padding: 18px;
+        color: hsl(232, 13%, 33%);
       }
       .fir {
+        font-size: 13px;
         width: 100%;
         margin-top: 30px;
         height: 40px;
@@ -134,6 +137,7 @@
         align-items: center;
       }
       .sec {
+        font-size: 13px;
         width: 100%;
         margin-top: 30px;
         height: 40px;
@@ -149,7 +153,7 @@
       }
       h4 {
         text-align: center;
-        font-size: 70px;
+        font-size: 65px;
       }
       hr {
         margin-top: 15px;
@@ -175,24 +179,40 @@
         color: white;
         cursor: pointer;
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 1000px) {
+        body {
+          width: 100%;
+        }
+        .container {
+          width: 333px;
+          padding: 0;
+        }
         .boxes {
           flex-direction: column;
+
           gap: 30px;
+          width: 333px;
+          align-items: center;
+        }
+        .box1 {
+          width: 333px;
         }
         .box2 {
           padding-top: 20px;
+          width: 333px;
+        }
+        .box3 {
+          width: 333px;
         }
         .whole {
           display: flex;
-          justify-content: left;
-          margin-left: 110px;
+          justify-content: center;
           gap: 10px;
         }
+
         h1 {
-          text-align: left;
+          text-align: center;
           margin-top: 10px;
-          margin-left: 110px;
           margin-bottom: 20px;
         }
       }
@@ -221,7 +241,7 @@
           <hr />
           <p>Send up to 3 GB</p>
           <hr />
-          <p class="fir">Learn More</p>
+          <p class="fir">LEARN MORE</p>
         </div>
         <div class="box2">
           <h2>Basic</h2>
@@ -234,7 +254,7 @@
           <hr />
           <p>Send up to 10 GB</p>
           <hr />
-          <p class="sec">Learn More</p>
+          <p class="sec">LEARN MORE</p>
         </div>
         <div class="box3">
           <h2>Master</h2>
@@ -247,7 +267,7 @@
           <hr />
           <p>Send up to 20 GB</p>
           <hr />
-          <p class="fir">Learn More</p>
+          <p class="fir">LEARN MORE</p>
         </div>
       </div>
     </div>
